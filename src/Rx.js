@@ -50,7 +50,7 @@ const mapDispatchToProps = (dispatch)=>{
         rxAdd:(data)=>{
             dispatch({
                 type:'Add',
-                playload:data
+                payload:data
             })
         },
     }

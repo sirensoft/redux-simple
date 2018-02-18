@@ -2,7 +2,7 @@
 const  rx=(state=[],action)=>{
     switch (action.type) {
         case 'Add':
-            state.push(action.playload)
+           state.push(action.payload)
             break;
     
         default:
