@@ -20,7 +20,7 @@ ReactDOM.render(
       <Link to='/'>หน้าแรก</Link> | 
       <Link to='/app'>เปิด Visit</Link>
       <Switch>
-        <Route path="/app" component={App}/>
+        <Route path="/app"    component={App}/>
         <Route path="/" component={firstPage}/>
       </Switch>
     </div>

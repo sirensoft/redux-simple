@@ -1,5 +1,6 @@
 
 import React,{Component} from 'react'
+import Keypress from 'react-keypress';
 
 
 class Dx extends Component{
@@ -24,13 +25,19 @@ class Dx extends Component{
             dxcode:''
         })
     }
+    
+    keyPress(e){
+        console.log('key',e.key)
+        
+    }
 
 
     render(){
         return(
             <div >
                 <form onSubmit={this.onSubmit}>
-                    <input value={this.state.dxcode} onChange={this.onChange}  placeholder="กรอกรหัสโรค Enter"/>
+                    <input value={this.state.dxcode} onChange={this.onChange}  onKeyPress={this.keyPress}   placeholder="กรอกรหัสโรค Enter"/>
+                   
                 </form>
                 <hr/>
                 <ul>
